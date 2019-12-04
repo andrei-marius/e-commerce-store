@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary cart-btn" data-toggle="modal" data-target="#cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                Cart (<span class="total-count"></span>)</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61LGgNjwg1L._SL1500_.jpg" alt="Product image">
+                    <div class="card-block">
+                        <h4 class="card-title">Galaxy Note 10+</h4>
+                        <p class="card-text">Price: $1099</p>
+                        <a href="#" data-name="GalaxyNote10+" data-price="1099" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.goblue.dk/images/galaxy-s10-plus-prism-black-3.jpg" alt="Product image">
+                    <div class="card-block">
+                        <h4 class="card-title">Galaxy S10+</h4>
+                        <p class="card-text">Price: $999</p>
+                        <a href="#" data-name="GalaxyS10+" data-price="1200" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="https://shop.telia.dk/images/Samsung_Galaxy_S10E_Front_Rear_Black.png" alt="Product image">
+                    <div class="card-block">
+                        <h4 class="card-title">Galaxy S10e</h4>
+                        <p class="card-text">Price: $749</p>
+                        <a href="#" data-name="GalaxyS10e" data-price="749" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" disabled>Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>

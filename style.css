@@ -1,0 +1,32 @@
+body {
+  padding-top: 80px;
+}
+
+.show-cart li {
+  display: flex;
+}
+
+.card {
+  width: 20rem;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.cart-btn {
+  float: right;
+}
+
+.add-to-cart {
+  float: right;
+}
+
